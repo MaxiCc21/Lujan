@@ -1,0 +1,11 @@
+node_modules/
+
+.text
+misNotas.txt
+
+
+.env
+.env.production
+
+error.log
+

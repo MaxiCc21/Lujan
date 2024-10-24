@@ -1,0 +1,258 @@
+
+
+.average-section{
+    // height: 400px;
+    height: 70vh;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+  }
+
+.average-section div{
+    // width: 80%;
+  }
+
+h3{
+margin: 0;
+padding: 0;
+}
+
+.home-first-section-data{
+    // width: 80%;
+    display: flex;
+    justify-content: center;
+}
+.home-first-section-data p{
+
+    display: flex;
+    justify-content: center;
+}
+.section-home-1{
+    height: auto;
+}
+
+.sh1-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 120px;
+}
+
+.sh1-1 h3{
+    font-family: $font-family-base;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: light;
+    font-size: 40px;
+}
+.sh1-1 p{
+    font-family: $font-family-base;
+    font-weight: 500;
+    font-style: Medium  ;
+    font-size: 40px;
+    margin: 0;
+}
+
+.sh1-2{
+    margin-bottom: 60px;
+
+}
+.sh1-2 * {
+    font-family: $font-family-base;
+    font-size: $font-size-extra-large;
+    color: $greeen-primary;
+
+}
+
+.sh1-3{
+    margin-bottom: 60px;
+}
+
+.sh1-3 button {
+    margin-bottom: 60px;
+    font-family: $font-family-base; /* Puedes cambiar por otra fuente */
+    font-size: $font-size-base; /* Ajusta el tamaño de la fuente */
+    color: #000000; /* Color del texto inicial */
+    background-color: $greeen-primary-booton; /* Color de fondo del botón */
+    border: none;
+    padding: 20px 40px;
+    border-radius: 5px; /* Borde redondeado, opcional */
+    cursor: pointer; /* Hace que el cursor cambie a mano al pasar sobre el botón */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Animación suave al cambiar el color */
+}
+
+.sh1-3 button:hover {
+    background-color: rgb(155, 192, 0); /* Cambia el color de fondo al hacer hover */
+    color: #000000; /* Cambia el color del texto al hacer hover */
+    cursor: pointer; /* Cambia el cursor a una mano */
+}
+
+//* ------------------ section-home-2 ------------------
+.section-home-2{
+    display: flex;
+    // flex-direction: column;
+    // align-items: center;
+
+}
+// .lkl{
+//     flex-direction: column;
+// }
+.div-home-2{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.home-section-2 { 
+    display: grid;
+    grid-template-rows: 0.5fr 1.5fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 40px 0px;
+    grid-auto-flow: row;
+    justify-items: center;
+    width: 90%;
+  }
+  
+  .home-section-2-data {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.7fr;
+    grid-template-rows: 1fr;
+    // gap: 40px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "hs2d-1 hs2d-2 hs2d-3";
+    grid-area: 2 / 1 / 3 / 2;
+    width: 100%;
+    // padding: 15px;
+
+  }
+  
+  .hs2d-1 {
+    grid-area: hs2d-1;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+}
+  
+.hs2d-1-title{
+    margin-bottom: 40px;
+    h3{
+        font-family: $font-family-base;
+        font-size: calc($font-size-large + 8px);
+        font-weight: $font-weight-normal;
+        margin-top: 10px;
+    }
+    span{
+        font-family: $font-family-base;
+        font-size: calc($font-size-large + 8px);
+        color: $violet-primary;
+        font-weight: $font-weight-bold;
+    }
+}
+
+
+.hs2d-1-data{
+    font-family: $font-family-base;
+    font-size: $font-size-small;
+    margin-bottom: 50px;
+}
+
+.hs2d-redes{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 15px;
+
+}
+
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* Hace que el div sea un círculo */
+    border: 2px solid rgba(100, 100, 100, 0.677); /* Borde fino de color negro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      width: 100%;
+      height: 100%;
+    }
+  
+    i {
+      font-size: 20px; /* Tamaño del icono */
+      color: rgba(100, 100, 100, 0.677); /* Color del icono */
+    }
+  }
+  
+  
+  .hs2d-2 {
+    grid-area: hs2d-2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+  .hs2d-3 { 
+    grid-area: hs2d-3;
+  
+    display: flex;
+}
+
+.hs2d-3 ul{
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    // list-style: none;
+    // padding: 0;
+    // margin: 0;
+
+    li {
+        margin-bottom: 30px;
+        position: relative;
+        padding-left: 10px;
+    }
+    &::before {
+        content: '\f232'; /* Código del icono de WhatsApp en Font Awesome */
+        font-family: "Font Awesome 5 Brands"; /* Familia de Font Awesome para marcas */
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #25D366; /* Color del icono (verde de WhatsApp) */
+        font-size: 20px; /* Tamaño del icono */
+    }
+}
+  .home-section-2-title {
+    grid-area: 1 / 1 / 2 / 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // margin-bottom: 40px;
+
+    h2{
+        font-family: $font-family-base;
+        font-size: $font-size-xxlarge;
+        font-style: light;
+        font-weight: 300;
+        margin:5px;
+    }
+    p{
+        font-family: $font-family-base;
+        font-size: 40px;
+        // font-style: light;
+        font-weight: $font-weight-bold;
+        margin:5px;
+    }
+}

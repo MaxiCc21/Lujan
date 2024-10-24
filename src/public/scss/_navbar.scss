@@ -1,0 +1,25 @@
+.box {
+    background-color: #fff;  // Fondo del body
+    color: $text-color;  // Color del texto
+    // height: 60vh;
+    // height: auto;
+    // border: 10px solid #9be18061;
+  }
+
+  nav {
+    display: flex;
+    padding: 10px 20px;
+    background-color: #333;
+    align-items: center;
+    height: 10vh;
+  }
+  
+  .logo img {
+    width: 300px; /* Cambia este valor para hacerlo más grande */
+    /* height: 100px; */ /* O puedes usar height para especificar la altura */
+  }
+  
+  .nav-options {
+    display: flex;
+    gap: 20px; /* Espacio entre las opciones, si las agregas luego */
+  }
